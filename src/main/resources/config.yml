@@ -21,7 +21,7 @@ messages:
 
   bounty: "&cThe server added &6$%bounty% &cto %player%'s bounty!"
 
-  new-record: "&6🏆 NEW SERVER RECORD! &e%player% reached a %record% killstreak!"
+  new-record: "&6🏆 NEW SERVER RECORD! &e%player% reached a &c%record% &ekillstreak!"
 
 # Killstreak Milestones
 killstreaks:
@@ -37,7 +37,7 @@ killstreaks:
     broadcast: true
     commands:
       - "eco give %player% 2000"
-      - "cc give physical %player% vote 1"
+      - "crate key give %player% Vote 1"
 
   15:
     bounty-add: 3000
@@ -50,24 +50,43 @@ killstreaks:
     broadcast: true
     commands:
       - "eco give %player% 4000"
-      - "cc give physical %player% vote 1"
+      - "crate key give %player% Vote 1"
+
+  25:
+    bounty-add: 5000
+    broadcast: true
+    commands:
+      - "eco give %player% 5000"
 
   30:
     bounty-add: 6000
     broadcast: true
     commands:
       - "eco give %player% 6000"
+      - "crate key give %player% Vote 1"
+
+  35:
+    bounty-add: 7000
+    broadcast: true
+    commands:
+      - "eco give %player% 7000"
 
   40:
     bounty-add: 8000
     broadcast: true
     commands:
       - "eco give %player% 8000"
-      - "cc give physical %player% vote 1"
+      - "crate key give %player% Vote 1"
+
+  45:
+    bounty-add: 9000
+    broadcast: true
+    commands:
+      - "eco give %player% 9000"
 
   50:
     bounty-add: 10000
     broadcast: true
     commands:
       - "eco give %player% 10000"
-      - "cc give physical %player% vote 1"
+      - "crate key give %player% Vote 1"
