@@ -1,0 +1,40 @@
+name: GalacticKillStreaks
+version: 1.0.0
+main: me.eaz.galactickillstreaks.GalacticKillStreaks
+author: Eaz
+description: Automatic killstreak rewards, server bounties, and anti-farm system.
+website: https://github.com/
+
+softdepend:
+  - Vault
+  - CrazyCrates
+  - BountyHunters
+  - PlaceholderAPI
+
+commands:
+  killstreak:
+    description: View your current and highest killstreak.
+    usage: /killstreak
+    aliases: [ks]
+
+  topstreaks:
+    description: View the highest killstreaks.
+    usage: /topstreaks
+
+  record:
+    description: View the server killstreak record.
+    usage: /record
+
+  gks:
+    description: GalacticKillStreaks admin command.
+    usage: /gks
+    aliases: [galactickillstreaks]
+
+permissions:
+  galactickillstreaks.use:
+    description: Allows use of player commands.
+    default: true
+
+  galactickillstreaks.admin:
+    description: Allows use of admin commands.
+    default: op
