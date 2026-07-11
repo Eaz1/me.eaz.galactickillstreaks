@@ -1,0 +1,73 @@
+# ==========================================
+# GalacticKillStreaks Configuration
+# ==========================================
+
+# Time before killing the same player counts again.
+anti-farm:
+  enabled: true
+  cooldown-minutes: 15
+
+# Infinite reward system
+repeat:
+  enabled: true
+  start-at: 50
+  every: 10
+
+# Messages
+messages:
+  prefix: "&8[&bGalactic&3KS&8] "
+
+  streak: "&6%player% &ehas reached a &c%streak% &ekillstreak!"
+
+  bounty: "&cThe server added &6$%bounty% &cto %player%'s bounty!"
+
+  new-record: "&6🏆 NEW SERVER RECORD! &e%player% reached a %record% killstreak!"
+
+# Killstreak Milestones
+killstreaks:
+
+  5:
+    bounty-add: 1000
+    broadcast: true
+    commands:
+      - "eco give %player% 1000"
+
+  10:
+    bounty-add: 2000
+    broadcast: true
+    commands:
+      - "eco give %player% 2000"
+      - "cc give physical %player% vote 1"
+
+  15:
+    bounty-add: 3000
+    broadcast: true
+    commands:
+      - "eco give %player% 3000"
+
+  20:
+    bounty-add: 4000
+    broadcast: true
+    commands:
+      - "eco give %player% 4000"
+      - "cc give physical %player% vote 1"
+
+  30:
+    bounty-add: 6000
+    broadcast: true
+    commands:
+      - "eco give %player% 6000"
+
+  40:
+    bounty-add: 8000
+    broadcast: true
+    commands:
+      - "eco give %player% 8000"
+      - "cc give physical %player% vote 1"
+
+  50:
+    bounty-add: 10000
+    broadcast: true
+    commands:
+      - "eco give %player% 10000"
+      - "cc give physical %player% vote 1"
